@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resource Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4285f4;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4285f4;
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        iframe {
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #4285f4;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        #clock {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI Resource Hub</h1>
+        <div id="clock"></div>  <!-- Clock Display -->
+        <p>Your one-stop hub for AI resources and tools</p>
+    </header>
+    
+    <nav>
+        <a href="https://www.google.com" target="_blank">Google</a>
+        <a href="https://www.youtube.com" target="_blank">YouTube</a>
+        <a href="https://chat.openai.com" target="_blank">ChatGPT</a>
+    </nav>
+
+    <div class="content">
+        <h2>Explore AI Tools</h2>
+        <p>Discover various resources to enhance your AI learning journey.</p>
+        
+        <!-- YouTube Embed -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+    
+    <footer>
+        <p>Created by Divyanshu Maurya | © 2024 AI Resource Hub</p>
+    </footer>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            document.getElementById('clock').innerText = `${hours}:${minutes}:${seconds}`;
+        }
+        setInterval(updateClock, 1000);
+        updateClock(); // Initialize the clock immediately
+    </script>
+</body>
+</html>

@@ -4,8 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light background for contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Table container */
+table {
+    width: 70%; /* Adjusts to 70% of the screen width */
+    border-collapse: collapse; /* Removes space between borders */
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures border radius works properly */
+}
+
+/* Table header styling */
+thead {
+    background-color: #4CAF50; /* Green header */
+    color: white; /* White text */
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd; /* Light gray border between cells */
+}
+
+/* Alternate row colors for readability */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray background */
+}
+
+/* Hover effect for rows */
+tbody tr:hover {
+    background-color: #e6f7ff; /* Light blue on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    table {
+        width: 90%; /* Adjusts table width on smaller screens */
+    }
+}
+</style>
 </head>
 <body>
-    
+    <h1>Table in HTML</h1>
+    <table>
+        <!-- Head of the table  -->
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <!-- Body of the table  -->
+         <tbody>
+            <tr>
+                <td>Divaynshu</td>
+                <td>Software engg</td>
+                <td>$300000</td>
+            </tr>
+            <tr>
+                <td>Divaynshu</td>
+                <td>Software engg</td>
+                <td>$300000</td>
+            </tr>
+            <tr>
+                <td>Divaynshu</td>
+                <td>Software engg</td>
+                <td>$300000</td>
+            </tr>
+            <tr>
+                <td>Divaynshu</td>
+                <td>Software engg</td>
+                <td>$300000</td>
+            </tr>
+            <tr>
+                <td>Thanku</td>
+                <td colspan="2">so</td>
+                
+            </tr>
+         </tbody>
+    </table>
 </body>
 </html>

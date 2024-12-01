@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>/* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;  /* Light background for contrast */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        
+        /* Form container */
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        
+        /* Label styling */
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        /* Input fields styling */
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        
+        /* Style the dropdown */
+        select {
+            appearance: none; /* Removes default arrow on some browsers */
+            background-color: #f9f9f9;
+        }
+        
+        /* Subscription plan section styling */
+        p {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        input[type="radio"] {
+            margin: 0 5px 10px 0;
+        }
+        
+        /* Checkbox styling */
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        
+        /* Textarea styling */
+        textarea {
+            resize: vertical; /* Allows vertical resizing */
+        }
+        
+        /* Submit button styling */
+        button[type="submit"] {
+            background-color: #4CAF50; /* Green background */
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        
+        /* Submit button hover effect */
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        
+        /* Responsive styling */
+        @media (max-width: 480px) {
+            form {
+                padding: 15px;
+            }
+        }
+        </style>
+</head>
+<body>
+    <!-- <h1>Form in HTML</h1> -->
+    <form action="/submit.php">
+        <!-- Text input for name  -->
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter Name" required>
+        </div>
+        <!-- Phone input  -->
+        <div>
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" placeholder="Enter number" required>
+        </div>
+    <!-- Email input  -->
+     <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter Email" required>
+     </div>
+     <!-- !-- password input   -->
+     <div>
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Enter Password" required>
+     </div>
+        <!-- dob input  -->
+     <div>
+        <label for="dob">Date of birth</label>
+        <input id="dob" type="date" required>
+     </div>
+    <!-- Dropdown (select input ) for gender  -->
+     <div>
+        <label for="gender">Gender</label>
+        <select id="gender" required>
+            <option value="" disabled selected>Select gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <!-- Ratio button for subscription plan -->
+        <p>Subscription Plan</p>
+        <input type="radio" name="subscription" id="basic" value="basic">
+        <label for="basic">Basic</label>
+
+        <input type="radio" name="subscription" id="premium" value="premium">
+        <label for="basic">Premium</label>
+       
+        <input type="radio" name="subscription" id="vip" value="vip">
+        <label for="basic">VIP</label>
+        
+        <!-- Checkbox for agreeing to terms -->
+        <div>
+            <input id="terms" type="checkbox" required>
+            <label for="terms">I agree to the terms and conditions</label>
+        </div>
+
+        <!-- Textarea for Comments -->
+        <div>
+            <label for="comments">Comments</label>
+            <textarea id="comments" placeholder="Enter your comments" rows="4"></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+
+     </div>
+    </form>
+</body>
+</html>

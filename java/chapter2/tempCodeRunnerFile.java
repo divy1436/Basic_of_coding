@@ -1,2 +1,1 @@
-static int logic(int x,int y);
-        // int z;
+        b=859;

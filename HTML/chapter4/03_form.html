@@ -3,35 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>/* General body styling */
+    <title>Styled Form</title>
+    <style>
+        /* General body styling */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;  /* Light background for contrast */
+            background-color: #87CEFA; /* Sky Blue background */
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             margin: 0;
         }
-        
+
         /* Form container */
         form {
-            background-color: #ffffff;
+            background-color: #FFD700; /* Yellow background for the form */
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             max-width: 400px;
             width: 100%;
         }
-        
+
         /* Label styling */
         label {
             display: block;
             margin-bottom: 5px;
             font-weight: bold;
+            color: #000080; /* Navy text color */
         }
-        
+
         /* Input fields styling */
         input[type="text"],
         input[type="tel"],
@@ -46,37 +48,30 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             font-size: 14px;
+            background-color: #E0FFFF; /* Light cyan input background */
         }
-        
+
         /* Style the dropdown */
         select {
             appearance: none; /* Removes default arrow on some browsers */
-            background-color: #f9f9f9;
+            background-color: #E0FFFF;
         }
-        
-        /* Subscription plan section styling */
-        p {
-            font-weight: bold;
-            margin-top: 10px;
-        }
-        
-        input[type="radio"] {
-            margin: 0 5px 10px 0;
-        }
-        
-        /* Checkbox styling */
+
+        /* Radio button and checkbox styling */
+        input[type="radio"],
         input[type="checkbox"] {
             margin-right: 10px;
         }
-        
+
         /* Textarea styling */
         textarea {
             resize: vertical; /* Allows vertical resizing */
+            background-color: #E0FFFF;
         }
-        
+
         /* Submit button styling */
         button[type="submit"] {
-            background-color: #4CAF50; /* Green background */
+            background-color: #4682B4; /* Steel Blue button background */
             color: white;
             border: none;
             padding: 12px;
@@ -85,22 +80,21 @@
             width: 100%;
             font-size: 16px;
         }
-        
+
         /* Submit button hover effect */
         button[type="submit"]:hover {
-            background-color: #45a049;
+            background-color: #4169E1; /* Royal Blue hover effect */
         }
-        
+
         /* Responsive styling */
         @media (max-width: 480px) {
             form {
                 padding: 15px;
             }
         }
-        </style>
+    </style>
 </head>
 <body>
-    <!-- <h1>Form in HTML</h1> -->
     <form action="/submit.php">
         <!-- Text input for name  -->
         <div>
@@ -112,41 +106,42 @@
             <label for="phone">Phone</label>
             <input id="phone" type="tel" placeholder="Enter number" required>
         </div>
-    <!-- Email input  -->
-     <div>
-        <label for="email">Email</label>
-        <input id="email" type="email" placeholder="Enter Email" required>
-     </div>
-     <!-- !-- password input   -->
-     <div>
-        <label for="password">Password</label>
-        <input id="password" type="password" placeholder="Enter Password" required>
-     </div>
+        <!-- Email input  -->
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter Email" required>
+        </div>
+        <!-- Password input  -->
+        <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter Password" required>
+        </div>
         <!-- dob input  -->
-     <div>
-        <label for="dob">Date of birth</label>
-        <input id="dob" type="date" required>
-     </div>
-    <!-- Dropdown (select input ) for gender  -->
-     <div>
-        <label for="gender">Gender</label>
-        <select id="gender" required>
-            <option value="" disabled selected>Select gender</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-        </select>
-        <!-- Ratio button for subscription plan -->
+        <div>
+            <label for="dob">Date of birth</label>
+            <input id="dob" type="date" required>
+        </div>
+        <!-- Dropdown (select input) for gender  -->
+        <div>
+            <label for="gender">Gender</label>
+            <select id="gender" required>
+                <option value="" disabled selected>Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <!-- Radio buttons for subscription plan -->
         <p>Subscription Plan</p>
         <input type="radio" name="subscription" id="basic" value="basic">
         <label for="basic">Basic</label>
 
         <input type="radio" name="subscription" id="premium" value="premium">
-        <label for="basic">Premium</label>
-       
+        <label for="premium">Premium</label>
+
         <input type="radio" name="subscription" id="vip" value="vip">
-        <label for="basic">VIP</label>
-        
+        <label for="vip">VIP</label>
+
         <!-- Checkbox for agreeing to terms -->
         <div>
             <input id="terms" type="checkbox" required>
@@ -163,8 +158,6 @@
         <div>
             <button type="submit">Submit</button>
         </div>
-
-     </div>
     </form>
 </body>
 </html>

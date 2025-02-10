@@ -1,5 +1,5 @@
 #include<stdio.h> 
-
+#include<string.h>
 struct student { // Define a structure to represent a student.
     int id; // Stores student ID.
     int marks; // Stores student marks.

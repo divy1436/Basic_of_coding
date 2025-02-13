@@ -3,61 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lanudry Wallah</title>
+    <title>Laundry Wallah</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #45a049;
+        }
+        .service-grid, .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .service-item, .pricing-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .service-item img, .pricing-item img {
+            max-width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-  <header> <h1>Welcome to Laundry Wallah </h1></header>
-    <p><b>Laundry Wallah </b>is a modern, tech-enabled laundry service that brings convenience and quality to your doorstep. Designed for busy individuals and families, it offers a seamless solution for all your laundry needs, including washing, dry cleaning, ironing, and folding. With a focus on affordability and eco-friendly practices, Laundry Wallah uses advanced techniques and high-quality products to ensure your clothes receive the best care. By integrating easy online booking, timely pickups, and fast delivery, Laundry Wallah stands as the perfect partner for maintaining your wardrobe effortlessly while saving time and effort.</p>
-    <img src="https://plus.unsplash.com/premium_photo-1664372899525-d99a419fd21a?q=80&w=994&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="300">
-    <h2>Our Services </h2>
-    <ul>
-        <li>Washing and Drying</li>
-        <li>Ironing and Folding</li>
-        <li>Dry Cleaning</li>
-        <li>Stain Removal</li>
-        <li>Express Services</li>
-        <li>Special Garment Care</li>
-    </ul>
+
+<header>
+    <h1>Welcome to Laundry Wallah</h1>
+</header>
+
+<nav>
+    <a href="#home" class="tab-link" data-tab="home">Home</a>
+    <a href="#services" class="tab-link" data-tab="services">Services</a>
+    <a href="#pricing" class="tab-link" data-tab="pricing">Pricing</a>
+    <a href="#contact" class="tab-link" data-tab="contact">Contact</a>
+</nav>
+
+<div id="home" class="tab-content active">
+    <p><b>Laundry Wallah</b> is a modern, tech-enabled laundry service that brings convenience and quality to your doorstep. Designed for busy individuals and families, it offers a seamless solution for all your laundry needs, including washing, dry cleaning, ironing, and folding. With a focus on affordability and eco-friendly practices, Laundry Wallah uses advanced techniques and high-quality products to ensure your clothes receive the best care. By integrating easy online booking, timely pickups, and fast delivery, Laundry Wallah stands as the perfect partner for maintaining your wardrobe effortlessly while saving time and effort.</p>
+    <img src="https://plus.unsplash.com/premium_photo-1664372899525-d99a419fd21a?q=80&w=994&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Laundry Service">
+    <img src="https://images.unsplash.com/photo-1622473590773-f588134b6ce7?q=80&w=1370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Laundry Machine">
+</div>
+
+<div id="services" class="tab-content">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+        <div class="service-item">
+            <img src="https://images.unsplash.com/photo-1604176354204-9268737828e4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Washing and Drying">
+            <h3>Washing and Drying</h3>
+            <p>We use state-of-the-art machines to ensure your clothes are cleaned and dried efficiently.</p>
+        </div>
+        <div class="service-item">
+            <img src="https://images.unsplash.com/photo-1611096265583-5d272ec86e1a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ironing and Folding">
+            <h3>Ironing and Folding</h3>
+            <p>Professional ironing and folding services to keep your clothes crisp and neat.</p>
+        </div>
+        <div class="service-item">
+            <img src="https://images.unsplash.com/photo-1611095973763-414069e0b4c1?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dry Cleaning">
+            <h3>Dry Cleaning</h3>
+            <p>Specialized dry cleaning for delicate fabrics and garments.</p>
+        </div>
+        <div class="service-item">
+            <img src="https://images.unsplash.com/photo-1611095973544-5a3a9b7b5b1a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Stain Removal">
+            <h3>Stain Removal</h3>
+            <p>Advanced stain removal techniques to restore your clothes to their original condition.</p>
+        </div>
+    </div>
+</div>
+
+<div id="pricing" class="tab-content">
     <h2>Price List</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Service</th>
-                <th>Price</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Washing</td>
-                <td>100</td>
-            </tr>
-            <tr>
-                <td>Ironing </td>
-                <td>50</td>
-            </tr>
-        </tbody> 
-    </table>
-    <body>
-        <h2>Book now</h2>
+    <div class="pricing-grid">
+        <div class="pricing-item">
+            <img src="https://images.unsplash.com/photo-1611095973763-414069e0b4c1?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Washing">
+            <h3>Washing</h3>
+            <p>₹100 per load</p>
+        </div>
+        <div class="pricing-item">
+            <img src="https://images.unsplash.com/photo-1611095973544-5a3a9b7b5b1a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ironing">
+            <h3>Ironing</h3>
+            <p>₹50 per piece</p>
+        </div>
+    </div>
+</div>
+
+<div id="contact" class="tab-content">
+    <h2>Book Now</h2>
     <form action="/submit.php">
-        
-            <div>
-                <label for="name">Name</label>
-                <input id="name" type="text" placeholder="Enter Name" required>
-                <label for="email">Email</label>
-                <input id="email" type="email" placeholder="Enter email" required>
-                <label for="phone">Phone</label>
-                <input type="tel"  id="phone"
-                placeholder="Enter phone" required>
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter Name" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter email" required>
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" placeholder="Enter phone" required>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
 
-            </div> 
-            <div><button type="submit">Submit</button></div> 
+<footer>
+    <p>Contact us at: info@laundrymart.com</p>
+</footer>
 
-            <footer>
-                <p>Contact us at: info@laundrymart.com.</p>
-            </footer>
-        
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const tabLinks = document.querySelectorAll('.tab-link');
+        const tabContents = document.querySelectorAll('.tab-content');
 
-        
-    </body>
+        tabLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetTab = this.getAttribute('data-tab');
+
+                tabContents.forEach(content => {
+                    content.classList.remove('active');
+                });
+
+                document.getElementById(targetTab).classList.add('active');
+
+                tabLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+
+                this.classList.add('active');
+            });
+        });
+    });
+</script>
+
+</body>
 </html>

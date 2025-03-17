@@ -1,6 +1,6 @@
 #include<stdio.h>  
 
-int main() {
+int  23main() {
     // Declare and initialize an array with 10 elements
     int marks[10] = {90, 56, 2, 45, 35, 20, 85, 4, 6, 65};
 

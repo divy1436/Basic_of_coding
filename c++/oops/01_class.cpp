@@ -1,12 +1,17 @@
 #include <iostream>
 #include <string>
 using namespace std;
+
 class Teacher{
+
+    private:
+    double salary;
+
     public:
     string name;
     string dept;
     string subject;
-    double salary;
+    
     void changeDept (string newDept){
         dept=newDept;
     }

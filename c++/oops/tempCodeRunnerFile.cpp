@@ -1,1 +1,3 @@
-    // t1.salary=500; 
+Teacher() {
+        dept = "CSE";
+    }

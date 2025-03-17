@@ -11,10 +11,6 @@ public:
     string dept;
     string subject;
 
-    // Constructor
-    Teacher() {
-        dept = "CSE";
-    }
 
     // Setter for salary
     void setSalary(double s) {

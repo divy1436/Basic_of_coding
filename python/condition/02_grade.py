@@ -10,3 +10,5 @@ else:
     grade = "D"
 
 print("Grade of the student:", grade)
+print("Grade of the student:", grade)
+

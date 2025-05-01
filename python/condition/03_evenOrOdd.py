@@ -1,6 +1,6 @@
 # Q: Write a Python program to check whether a given number is even or odd.
 
-# Taking input from the user
+
 num = int(input("Enter a number: "))
 
 # Checking if the number is divisible by 2

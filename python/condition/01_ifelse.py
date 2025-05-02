@@ -14,7 +14,7 @@ elif(light == "green"):
 elif(light == "yellow"):
     print("wait")  # If the light is yellow, instruct to wait
 
-# Check number and give a message
+
 num = 3  
 if(num < 5):
     print("the number is greater")  # (Actually, the message is confusing — number is **less** than 5)

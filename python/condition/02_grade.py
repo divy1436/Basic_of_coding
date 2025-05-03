@@ -7,8 +7,7 @@ elif marks >= 80 and marks < 90:
 elif marks >= 70 and marks < 80:
     grade = "C"
 else:
-    grade = "D"
+    grade = "E"
 
-print("Grade of the student:", grade)
 print("Grade of the student:", grade)
 

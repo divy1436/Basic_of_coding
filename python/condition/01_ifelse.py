@@ -12,7 +12,7 @@ if(light == "red"):
 elif(light == "green"):
     print("go")  # If the light is green, instruct to go
 elif(light == "yellow"):
-    print("wait")  # If the light is yellow, instruct to wait
+    print("wait")  # Ifk the light is yellow, instruct to wait
 
 
 num = 3  

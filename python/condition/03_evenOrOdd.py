@@ -9,4 +9,4 @@ if (num % 2 == 0):
     print("Even")
 else:
     # Otherwise, it is odd
-    print("Odd")
+    print("Odd j")

@@ -49,7 +49,7 @@ public:
 };
 
 int main() {
-    Teacher t1("divuyanshu", "CSE", "Maths", 520);
+    Teacher t1("divuyanshu maur", "CSE", "Maths", 520);
     t1.getInfo();
 
 

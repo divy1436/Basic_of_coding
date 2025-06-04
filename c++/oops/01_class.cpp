@@ -31,7 +31,8 @@ int main() {
     Teacher t1; // constructor call
     t1.name = "Divyanshu";
     t1.subject = "Maths";
-    t1.setSalary(500); // Set salary using setter
+    t1.dept = "cse";
+    t1.setSalary(50); // Set salary using setter
 
     cout << "Name: " << t1.name << endl;
     cout << "Department: " << t1.dept << endl;

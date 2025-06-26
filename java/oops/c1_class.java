@@ -18,7 +18,7 @@ public class c1_class {
         Student S2 = new Student();
 
         // Assigning values
-        S1.id = 12;
+        S1.id = 1;
         S1.name = "Divyanshu";
         S2.id = 44;
         S2.name ="Srajan";

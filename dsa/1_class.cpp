@@ -19,6 +19,6 @@ int main() {
         }
     }
 
-    cout << "Sum of all odd numbers in array: " << sum << endl;
+    cout << "Sum of all odd numbers in arry: " << sum << endl;
     return 0;
 }

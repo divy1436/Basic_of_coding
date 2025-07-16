@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
         "Divyanshu"
-    ]
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }

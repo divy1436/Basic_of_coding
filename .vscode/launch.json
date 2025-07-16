@@ -1,0 +1,182 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "c02_ch1",
+            "request": "launch",
+            "mainClass": "c02_ch1",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "c1",
+            "request": "launch",
+            "mainClass": "c1",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "c10leapyear",
+            "request": "launch",
+            "mainClass": "c10leapyear",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "c10reversearrray",
+            "request": "launch",
+            "mainClass": "c10reversearrray",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "c11methods",
+            "request": "launch",
+            "mainClass": "c11methods",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "c12methodOverloading",
+            "request": "launch",
+            "mainClass": "c12methodOverloading",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "c13VarArgs",
+            "request": "launch",
+            "mainClass": "c13VarArgs",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "c14recursion",
+            "request": "launch",
+            "mainClass": "c14recursion",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "c15practice",
+            "request": "launch",
+            "mainClass": "c15practice",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "c1_class",
+            "request": "launch",
+            "mainClass": "c1_class",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "c1numberprint",
+            "request": "launch",
+            "mainClass": "c1numberprint",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "c2_class",
+            "request": "launch",
+            "mainClass": "c2_class",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "c2arraypp",
+            "request": "launch",
+            "mainClass": "c2arraypp",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "c2variables",
+            "request": "launch",
+            "mainClass": "c2variables",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "c3arithmetic",
+            "request": "launch",
+            "mainClass": "c3arithmetic",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "c4multiplevariables",
+            "request": "launch",
+            "mainClass": "c4multiplevariables",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "c5increments",
+            "request": "launch",
+            "mainClass": "c5increments",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "c6areacircle",
+            "request": "launch",
+            "mainClass": "c6areacircle",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "c7input",
+            "request": "launch",
+            "mainClass": "c7input",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "c8string",
+            "request": "launch",
+            "mainClass": "c8string",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "c9reportcard",
+            "request": "launch",
+            "mainClass": "c9reportcard",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "firstprogram",
+            "request": "launch",
+            "mainClass": "firstprogram",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "Operator1",
+            "request": "launch",
+            "mainClass": "java.crt_question.Operator1",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
+            "name": "result_03",
+            "request": "launch",
+            "mainClass": "result_03",
+            "projectName": "Basic_of_coding_c15148f5"
+        }
+    ]
+}

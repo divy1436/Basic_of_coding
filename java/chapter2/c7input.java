@@ -1,3 +1,4 @@
+package java.chapter2;
 import java.util.Scanner;
 
 public class c7input {

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "greaterthan",
+            "request": "launch",
+            "mainClass": "greaterthan",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
             "name": "class_3",
             "request": "launch",
             "mainClass": "dsa.class_3",

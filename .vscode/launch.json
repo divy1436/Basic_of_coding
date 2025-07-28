@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ifcondition",
+            "request": "launch",
+            "mainClass": "java.iflese.Ifcondition",
+            "projectName": "Basic_of_coding_c15148f5"
+        },
+        {
+            "type": "java",
             "name": "greaterthan",
             "request": "launch",
             "mainClass": "greaterthan",

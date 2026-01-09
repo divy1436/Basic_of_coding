@@ -1,4 +1,4 @@
-bn##basics of code
+##basics of code
 # My Coding Journey & Projects
 
 Welcome to my personal coding repository! This repository serves as a centralized place for my coding exercises, learning materials, and various projects across different programming languages and computer science concepts.

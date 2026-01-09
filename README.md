@@ -1,4 +1,4 @@
-#basics of code    
+# basics of code    
 
 # My Coding Journey & Projects  
 

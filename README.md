@@ -3,7 +3,7 @@
 
 Welcome to my personal coding repository! This repository serves as a centralized place for my coding exercises, learning materials, and various projects across different programming languages and computer science concepts.
 
-## Repository Structure  
+## Repository Structure   
 
 The repository is organized to facilitate easy navigation through different programming languages and topics. Here's a brief overview of the main directories:
 
